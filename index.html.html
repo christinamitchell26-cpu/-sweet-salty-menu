@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet & Salty Snacks Menu</title>
+<style>
+:root{
+  --pink:#e91e63;
+  --teal:#087f8c;
+  --orange:#ef7d00;
+  --navy:#10264d;
+  --cream:#fff8ec;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--navy);
+  background:linear-gradient(#6edcf4 0 150px,#fff5e3 150px 100%);
+}
+header{
+  text-align:center;
+  padding:20px 14px 18px;
+  background:rgba(255,255,255,.94);
+  border-bottom:6px solid var(--teal);
+}
+h1{
+  margin:0;
+  font-size:clamp(34px,10vw,58px);
+  line-height:.95;
+  color:var(--pink);
+}
+h1 span{color:var(--teal)}
+.phone{
+  display:inline-block;
+  margin-top:14px;
+  padding:12px 18px;
+  border-radius:999px;
+  background:var(--navy);
+  color:white;
+  font-size:21px;
+  font-weight:800;
+  text-decoration:none;
+}
+.phone small{font-size:13px;display:block;font-weight:600}
+.tagline{margin:12px 0 0;font-weight:700}
+main{max-width:760px;margin:auto;padding:16px 14px 40px}
+.section-title{
+  margin:22px 0 12px;
+  padding:10px 14px;
+  border-radius:14px;
+  color:white;
+  font-size:24px;
+  text-align:center;
+  background:var(--teal);
+}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{
+  background:white;
+  border-radius:18px;
+  padding:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+.card h3{margin:0 0 8px;font-size:20px;color:var(--pink)}
+.price-row{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #ccc}
+.price-row:last-child{border-bottom:0}
+.price{font-weight:800;color:var(--pink)}
+.combo{
+  background:white;
+  border-left:8px solid var(--orange);
+  border-radius:18px;
+  padding:16px;
+  margin:12px 0;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+.combo h3{margin:0;color:var(--orange);font-size:21px}
+.combo ul{margin:8px 0 0;padding-left:22px}
+.combo-price{
+  float:right;
+  background:var(--pink);
+  color:white;
+  font-weight:800;
+  border-radius:999px;
+  padding:8px 12px;
+  margin-left:10px;
+}
+footer{
+  margin-top:24px;
+  text-align:center;
+  background:var(--navy);
+  color:white;
+  border-radius:18px;
+  padding:20px;
+}
+footer a{color:white;font-weight:800;text-decoration:none;font-size:22px}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>SWEET <span>&amp; SALTY</span><br>SNACKS</h1>
+  <a class="phone" href="tel:8164273977">
+    <small>CALL OR TEXT</small>
+    816-427-3977
+  </a>
+  <p class="tagline">Good treats • Good vibes • Sunny days!</p>
+</header>
+
+<main>
+  <div class="section-title">Popcorn</div>
+  <div class="grid">
+    <div class="card"><h3>Popcorn</h3><div class="price-row"><span>Small</span><span class="price">$2.50</span></div><div class="price-row"><span>Large Bag</span><span class="price">$4.50</span></div></div>
+    <div class="card"><h3>Caramel Popcorn</h3><div class="price-row"><span>Small</span><span class="price">$3.50</span></div><div class="price-row"><span>Large Bag</span><span class="price">$6.50</span></div></div>
+    <div class="card"><h3>Oreo Popcorn</h3><div class="price-row"><span>Small</span><span class="price">$3.50</span></div><div class="price-row"><span>Large Bag</span><span class="price">$6.50</span></div></div>
+  </div>
+
+  <div class="section-title">Sweet &amp; Salty Favorites</div>
+  <div class="grid">
+    <div class="card"><h3>Nachos</h3><div class="price-row"><span>Single Order</span><span class="price">$5.00</span></div></div>
+    <div class="card"><h3>Cotton Candy</h3><div class="price-row"><span>Single</span><span class="price">$2.00</span></div></div>
+    <div class="card"><h3>Snow Cone</h3><div class="price-row"><span>Small</span><span class="price">$2.50</span></div><div class="price-row"><span>Large</span><span class="price">$3.50</span></div></div>
+  </div>
+
+  <div class="section-title">Refreshing Drinks</div>
+  <div class="grid">
+    <div class="card"><h3>Soda Can</h3><div class="price-row"><span>Can</span><span class="price">$1.50</span></div></div>
+    <div class="card"><h3>Water</h3><div class="price-row"><span>Bottle</span><span class="price">$1.00</span></div></div>
+  </div>
+
+  <div class="section-title">Combos</div>
+  <div class="combo"><span class="combo-price">$8.00</span><h3>1. Sweet Treat Combo</h3><ul><li>Small Caramel Popcorn</li><li>Small Snow Cone</li><li>Cotton Candy</li></ul></div>
+  <div class="combo"><span class="combo-price">$7.50</span><h3>2. Salty Snack Combo</h3><ul><li>Nachos</li><li>Soda or Water</li></ul></div>
+  <div class="combo"><span class="combo-price">$8.50</span><h3>3. Popcorn Lover Combo</h3><ul><li>Any Small Popcorn</li><li>Soda or Water</li></ul></div>
+  <div class="combo"><span class="combo-price">$13.50</span><h3>4. Deluxe Combo</h3><ul><li>Any Large Popcorn</li><li>Nachos</li><li>Soda or Water</li></ul></div>
+  <div class="combo"><span class="combo-price">$17.50</span><h3>5. Ultimate Combo</h3><ul><li>Large Caramel or Oreo Popcorn</li><li>Nachos</li><li>Large Snow Cone</li><li>Cotton Candy</li><li>Soda or Water</li></ul></div>
+
+  <div class="section-title">Add-Ons</div>
+  <div class="grid">
+    <div class="card"><h3>Extra Cheese</h3><div class="price-row"><span>Nachos</span><span class="price">$1.00</span></div></div>
+    <div class="card"><h3>Extra Jalapeños</h3><div class="price-row"><span>Nachos</span><span class="price">$0.50</span></div></div>
+  </div>
+
+  <footer>
+    <p>Ready to order?</p>
+    <a href="tel:8164273977">816-427-3977</a>
+    <p>Kansas City, Missouri</p>
+  </footer>
+</main>
+</body>
+</html>
